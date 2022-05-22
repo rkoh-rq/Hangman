@@ -60,7 +60,7 @@ class Hangman extends React.Component {
       <div className="app">
         <div>It is time to play hangman!</div>
         <p>no of wrong guesses: {this.state.wrong}</p>
-        <div>{isWin && "You win! The word was " + this.state.word}</div>
+        <div>{isWin && "You win!" + this.state.word}</div>
         <div>{isLose && "You lose! The word was " + this.state.word}</div>
         <div>
           {gameOver && (
