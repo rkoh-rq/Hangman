@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <div>Learn React</div>
+        <div>Let's play Hangman.</div>
       </header>
       <nav className="app-nav">
         <Link className="nav-item" to="/hangman">
