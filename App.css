@@ -1,0 +1,50 @@
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.app-logo {
+  height: 232px;
+  pointer-events: none;
+}
+
+.app-header {
+  font-size: 64px;
+  text-align: center;
+}
+
+.app-nav {
+  margin-top: 48px;
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 36px;
+}
+
+.backToHome {
+  font-size: 48px;
+  margin-top: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
