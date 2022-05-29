@@ -1,11 +1,11 @@
 .app {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
 }
 
 .app-logo {
@@ -20,17 +20,17 @@
 
 .app-nav {
   margin-top: 48px;
-  font-size: 32px;
   display: flex;
   justify-content: space-between;
 }
 
 .nav-item {
-  margin-right: 36px;
+  text-align: center;
+  margin: 16px;
 }
 
 .backToHome {
-  font-size: 48px;
+  font-size: 14px;
   margin-top: 16px;
 }
 
