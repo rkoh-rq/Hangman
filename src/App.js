@@ -8,14 +8,20 @@ function App() {
         <div>Let's play Hangman.</div>
       </header>
       <nav className="app-nav">
-        <Link className="nav-item" to="/easyhangman">
-          <button>Easy</button>
+        <Link to="/easyhangman">
+          <button id="difficulty-button" className="btn btn-outline-secondary">
+            Easy
+          </button>
         </Link>
-        <Link className="nav-item" to="/mediumhangman">
-          <button>Medium</button>
+        <Link to="/mediumhangman">
+          <button id="difficulty-button" className="btn btn-outline-secondary">
+            Medium
+          </button>
         </Link>
-        <Link className="nav-item" to="/hardhangman">
-          <button>Hard</button>
+        <Link to="/hardhangman">
+          <button id="difficulty-button" className="btn btn-outline-secondary">
+            Hard
+          </button>
         </Link>
       </nav>
     </div>

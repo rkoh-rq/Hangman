@@ -17,6 +17,12 @@ class AlphabetButton extends Component {
         className="btn btn-primary"
         onClick={this.onClick}
         value={this.value}
+        style={{
+          width: "10%",
+          aspectRatio: 1 / 1,
+          flex: 1,
+          textAlign: "center"
+        }}
       >
         {this.value}
       </button>

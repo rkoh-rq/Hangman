@@ -16,6 +16,7 @@
 .app-header {
   font-size: 64px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .app-nav {
@@ -24,27 +25,11 @@
   justify-content: space-between;
 }
 
-.nav-item {
-  text-align: center;
-  margin: 16px;
+#difficulty-button {
+  margin: 10px;
 }
 
 .backToHome {
   font-size: 14px;
   margin-top: 16px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: app-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container } from "react-bootstrap";
 
 const Navibar = () => {
   return (
@@ -8,7 +8,7 @@ const Navibar = () => {
       <Container>
         <Navbar.Brand>
           <Link to="/" style={{ textDecoration: "none", color: "#FFF" }}>
-            Hangman
+            Home
           </Link>
         </Navbar.Brand>
       </Container>
