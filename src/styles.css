@@ -3,6 +3,19 @@
   text-align: center;
 }
 
+.hangman {
+  background-color: lightblue;
+}
+
+.app {
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  min-width: 300px;
+  width: 90%;
+  max-width: 800px;
+}
+
 #guess {
   text-align: center;
   font-size: 18px;

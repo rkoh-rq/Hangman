@@ -96,31 +96,30 @@ class EasyHangman extends React.Component {
     const gameOver = isWin || isLose;
 
     return (
-      <div className="app">
-        <div>It is time to play hangman!</div>
-        <p>
-          no of wrong guesses: {this.state.wrong} / {this.props.maxWrong}
-        </p>
-        <HangBird chance={this.props.maxWrong - this.state.wrong} />
-        <div>{isWin && "You win! The word was " + this.state.word}</div>
-        <div style={{ margin: "20px" }}>
-          {isLose && "You lose! The word was " + this.state.word}
-        </div>
-        <div>
-          {gameOver && (
-            <button
-              type="button"
-              className="btn btn-outline-secondary"
-              onClick={this.handleReset}
-            >
-              Reset Game
-            </button>
-          )}
-        </div>
-        <div id="keyboard">{!gameOver && this.keyboard()}</div>
-        <div id="guess">{!gameOver && this.currWord()}</div>
-        <div>
-          <i>{!gameOver && "hint: " + this.state.hint}</i>
+      <div className="hangman">
+        <div className="app">
+          <p>
+            no of wrong guesses: {this.state.wrong} / {this.props.maxWrong}
+          </p>
+          <HangBird chance={this.props.maxWrong - this.state.wrong} />
+          <div>{isWin && "You win! The word was " + this.state.word}</div>
+          <div>{isLose && "You lose! The word was " + this.state.word}</div>
+          <div>
+            {gameOver && (
+              <button
+                type="button"
+                className="btn btn-outline-secondary"
+                onClick={this.handleReset}
+              >
+                Reset Game
+              </button>
+            )}
+          </div>
+          <div id="guess">{!gameOver && this.currWord()}</div>
+          <div style={{ margin: "20px" }}>
+            <i>{!gameOver && "hint: " + this.state.hint}</i>
+          </div>
+          <div id="keyboard">{!gameOver && this.keyboard()}</div>
         </div>
       </div>
     );

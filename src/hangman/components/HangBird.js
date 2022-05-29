@@ -23,6 +23,7 @@ class HangBird extends Component {
   render() {
     return (
       <img
+        id="bird"
         src={birds[this.props.chance]}
         alt={this.props.chance + " chances left"}
         width={"50%"}
